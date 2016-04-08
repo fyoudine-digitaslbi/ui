@@ -1,3 +1,10 @@
+{{#if (eq model.name 'franck')}}
+  {{log model}}
+{{/if}}
+
+<td data-title="User:" class="user">
+  {{identity-block identityNotParsed=model.accountId}}
+</td>
 <td data-title="State:" class="state">
   {{badge-state model=model}}
 </td>
